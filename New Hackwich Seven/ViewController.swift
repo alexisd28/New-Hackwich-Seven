@@ -16,12 +16,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        displayLabel.text = (" ")
+        displayLabel.text = ("")
     }
-
-    @IBAction func setLabelButtonPressed(_ sender: Any)
+    
+    
+    
+    @IBAction func setLabelButtonPressed(_ sender: UITextField)
+    
     {
-        displayLabel.text = (sender as AnyObject).text
+        //let UITextField = UILabel.self
+        displayLabel.text = textField.text
     }
     
 }
